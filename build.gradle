@@ -22,6 +22,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 
 }
+bootJar {
+	manifest {
+		attributes 'Main-Class': 'com.codibly.InternshipProjectApplication'
+	}
+}
 
 tasks.named('test') {
 	useJUnitPlatform()
